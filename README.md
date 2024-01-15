@@ -35,6 +35,10 @@ python3 python_socket_server.py
 # Now launch the ros_transmitter node
 roslaunch ros_transmitter ros_transmitter.launch
 ```
+
+https://github.com/skarful/robot_to_server/assets/87267305/df6c6e58-d41b-4b34-869a-a43ce6e55e3d
+
+
 ## Future Improvements
 - The python server side can be improved - presently we just check for the type of data received from the header and print this out. De-serialization/storage or processing of the received data can be added
 - Present version does not have a re-connection provision in case communication is lost between server and client. This can be added. 
