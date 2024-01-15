@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<launch>
+
+<arg name="output" default="screen"/>
+<arg name="launch_prefix" default=""/>
+
+<node name="sub_and_send" pkg="ros_transmitter" type="ros_transmitter_node" output="$(arg output)" launch-prefix="$(arg launch_prefix)">
+    <rosparam param="rosout_level">debug</rosparam>
+    <rosparam param="/ros_transmitter/IP_Address">127.0.0.1</rosparam>
+    <rosparam param="/ros_transmitter/UDP_Port">5005</rosparam>
+    <rosparam param="/ros_transmitter/TCP_Port">8080</rosparam>
+</node>
+</launch>
